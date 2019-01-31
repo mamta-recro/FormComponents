@@ -45,10 +45,7 @@ class UserLogin extends Component {
     var submitErrors = this.state.errors;
     submitErrors[e.target.name] = data.error;
     this.setState({ errors: submitErrors });
-    //
-    // var userDataFrg = this.state.userData;
-    // userDataFrg[e.target.name] = data.userData;
-    // this.setState({data:forgotPassData})
+    
   }
   handleforgotePass(e, userData) {
     var submitData = this.state.userData;
@@ -79,11 +76,7 @@ class UserLogin extends Component {
   render() {
     return (
       <div className={styles.loginICont}>
-        {/*<Modal height="230px" header="Customer Login"
-               isOpen={this.state.loginModal}
-                 onClose={()=>{this.setState({loginModal:false});this.props.closeModal();}}
-                 backDropClose={true}
-                 crossBtn={true} >*/}
+        
 
         <div className={styles["mar-top-20"] + " " + styles["msLoginBlock"]}>
           <div className={styles.captionLogin}>Login</div>

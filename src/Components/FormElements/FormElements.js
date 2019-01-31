@@ -95,9 +95,7 @@ export class Text extends React.Component {
           }
           readOnly={this.props.readOnly}
         />
-        {/* <div style={{left:labelWid+'px'}} className={(this.props.errorMessage!=undefined&&this.props.errorMessage!='required'&&this.props.errorMessage.length>0&&this.props.submitted?style.toastActive:'')}>
-					<p>{this.props.errorMessage}</p>
-				</div> */}
+
         {this.props.errorMessageDisplay != false ? (
           <div
             style={{ left: labelWid + "px" }}
@@ -112,8 +110,6 @@ export class Text extends React.Component {
                 : "")
             }
           >
-            {/* <span className={style.triangle}></span>
-					<p>{this.props.errorMessage}</p> */}
             <span>{this.props.errorMessage}</span>
           </div>
         ) : null}
@@ -199,12 +195,6 @@ export class TextArea extends React.Component {
               : ""
           }
         />
-        {/* <div>{this.props.errorMessage}</div> */}
-        {/* {this.props.errorMessageDisplay!=false?<div style={{left:labelWid+'px'}} className={style.toast+' '+(this.props.errorMessage!=undefined&&this.props.errorMessage!='required'&&this.props.errorMessage.length>0&&this.props.submitted?style.toastActive:'')}>
-					<span className={style.triangle}></span>
-					<p>{this.props.errorMessage}</p>
-					<span>{this.props.errorMessage}</span>
-					</div>:null} */}
       </div>
     );
   }

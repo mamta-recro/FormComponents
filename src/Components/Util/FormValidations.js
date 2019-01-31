@@ -30,11 +30,7 @@ var validations = {
     regallow: /^[0-9]+$/,
     errorMessage: "Please enter valid mobile number"
   },
-  company: {
-    regex: "",
-    min: 1,
-    max: 500
-  },
+
   amount: {
     regex: /^\d*\.{0,1}\d{0,2}$/,
     min: 1,
@@ -49,11 +45,7 @@ var validations = {
     regallow: /^[0-9]+$/,
     errorMessage: "Please enter 6 digits OTP number"
   },
-  loanId: {
-    regex: "",
-    min: 1,
-    max: 20
-  },
+
   pin: {
     regex: /^[0-9]+$/,
     min: 6,
@@ -67,13 +59,6 @@ var validations = {
     max: 4,
     regallow: /^[0-9]+$/,
     errorMessage: "Please enter 4 digits year"
-  },
-  gst: {
-    // 'regex':/^[0-3][0-9][a-zA-Z]{5}\d{4}[a-zA-Z]{1}[a-zA-Z0-9]{1}[zZ]{1}[A-Za-z0-9]{1}$/,
-    regex: /^([0-9]){2}([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}([0-9]){1}([a-zA-Z1-9]){1}([a-zA-Z0-9]){1}$/,
-    min: 15,
-    max: 15,
-    errorMessage: "Please enter valid GST number"
   },
 
   password: {
@@ -93,11 +78,7 @@ var validations = {
     regallow: /^[0-9]+$/,
     errorMessage: ""
   },
-  percentage: {
-    regex: /^\d{0,2}(\.\d{0,2})?$/,
 
-    regallow: /^\d{0,2}(\.\d{0,2})?$/
-  },
   numberAndDecimal: {
     regex: /^\d*\.{0,1}\d{0,9}$/,
 
